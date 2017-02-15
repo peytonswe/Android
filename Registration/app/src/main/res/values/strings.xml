@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="name_activity">Full name</string>
+    <string name="birthday_activity">Date of Birth</string>
+    <string name="about_me_activity">About me</string>
+    <string name="complete_activity">Information About Me</string>
+</resources>
