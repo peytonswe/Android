@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ksusha.gaylordtexan.MainActivity">
+
+    <ImageView
+        android:id="@+id/hotel_img"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:contentDescription="@string/hotel_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gaylord_grapevine" />
+
+    <TextView
+        android:id="@+id/hotel_title"
+        style="@style/HotelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotel_name" />
+
+    <TextView
+        android:id="@+id/hotel_description"
+        style="@style/HotelDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hotel_description" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/location_im" />
+
+        <TextView
+            android:id="@+id/text_address"
+            style="@style/AddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/location_icon"
+            android:text="@string/address"
+            android:textColor="#3F51B5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/phone_im" />
+
+        <TextView
+            android:id="@+id/text_phone_number"
+            style="@style/AddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/phone_icon"
+            android:text="@string/phone_number"
+            android:textColor="#3F51B5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/earth_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/earth_img" />
+
+        <TextView
+            style="@style/AddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/earth_icon"
+            android:text="@string/web_site_name"
+            android:textColor="#3F51B5" />
+    </RelativeLayout>
+
+
+</LinearLayout>
